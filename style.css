@@ -19,7 +19,9 @@ align-items: center;
 }
 #gridContainer {
     width: 50vw; 
-    height: 50vh; 
+    height:50vw;
+    display: flex;
+    flex-wrap: wrap;
     /* To see the container */
     border: 1px solid black;
 }
@@ -37,7 +39,7 @@ align-items: center;
 footer {
     height: 10vh;
     margin-top: 10vh;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
