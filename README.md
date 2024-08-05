@@ -1,7 +1,7 @@
 # Etch-A-Sketch
 
 Welcome to the Etch-A-Sketch repository!
-This repository serves the purpose of testing and displaying my skills in creating a website using:
+This repository serves the purpose of testing and practicing my skills in creating a website using:
 - HTML
 - CSS
 - Javascript
@@ -34,3 +34,4 @@ Hover over the tiles with the mouse and a multicoloured trail will follow along!
 
 # License 
 
+This project is licensed under the MIT License.
