@@ -6,6 +6,10 @@ This repository serves the purpose of testing and practicing my skills in creati
 - CSS
 - Javascript
 
+# Notice 
+
+Raikiri45 is an alternate account of RaimeiRaikiri, and most commits were made accidentally through Raikiri45. This has been resolved.
+
 # About
 
 This website aims to recreate a classic childhood toy. 
