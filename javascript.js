@@ -3,9 +3,10 @@ const gridContainer = document.querySelector('#gridContainer');
 const buttonContainer = document.querySelector('#buttonContainer');
 const setGridButton = document.querySelector('#setGrid');
 const resetGridButton = document.querySelector('#resetGrid');
-
+const colorPicker = document.querySelector("#color-picker");
 let containerFull = false;
 let rowLength = 10;
+let penColour = '#000000';
 
 setGridButton.addEventListener('click', function(){
     // prompting outside the function makes the function more scalable for different inputs
@@ -19,6 +20,7 @@ resetGridButton.addEventListener('click', function(){
     setGrid(rowLength);
 });
 
+colorPicker.addEventListener('input', () => changePenColour())
 function setGrid(size)
 {
     if (size <= 100)
@@ -37,7 +39,7 @@ function setGrid(size)
             const currentDiv = document.createElement('div');
             currentDiv.classList.add('colorSquare');
             currentDiv.style.cssText = `border: 1px solid #FB4F93; width: ${sizeOfSingleSquare}%; height: ${sizeOfSingleSquare}`;
-            currentDiv.addEventListener('mouseover', () => currentDiv.style.backgroundColor = 'pink')
+            currentDiv.addEventListener('mouseover', () => currentDiv.style.backgroundColor = penColour)
             gridContainer.appendChild(currentDiv);
         }
         containerFull = true;
@@ -53,4 +55,9 @@ function resetGrid(containerFull, container){
                 }
             containerFull = false;
         }
+}
+
+function changePenColour()
+{
+    penColour = `${colorPicker.value}`;
 }
