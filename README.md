@@ -22,7 +22,7 @@ Hover over the tiles with the mouse and a multicoloured trail will follow along!
 
 # To view the website
 
-- Follow this link
+- Follow this link - [Etch-A-Sketch](https://raimeiraikiri.github.io/Etch-A-Sketch/)
 
 # Contributions
 
