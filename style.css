@@ -58,7 +58,7 @@ button {
 .color-picker-container {
     display: flex;
     align-items: center;
-    width: clamp(140px, 8vw, 220px);
+    width: clamp(100px, 8vw, 220px);
     height: clamp(30px, 6vw, 50px);
     
     border: none;
@@ -74,6 +74,7 @@ input{
 label {
     font-size: 1.25rem;
     padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 footer {
