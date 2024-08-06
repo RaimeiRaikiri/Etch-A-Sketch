@@ -5,17 +5,21 @@
     }  
 
 body {
-width: 100vw;
-height: 100vh;
-position: absolute;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
 
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-align-items: center;
+    background-color: #28161C;
+    color: #00E6E4;
 }
+
 #Title {
     margin-top: 5vh;
+    font-size: 3rem;
 }
 #gridContainer {
     width: 50vw; 
@@ -23,19 +27,55 @@ align-items: center;
     display: flex;
     flex-wrap: wrap;
     /* To see the container */
-    border: 1px solid black;
+    border: 1px solid #FB4F93;
+    
+    background-color: white;
 }
 #buttonContainer {
     margin-top: 5vh;
     width: 50vw; 
     height: 20vh; 
-    /* To see the container */
-    border: 1px solid pink;
+  
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+button {
+    /* Responsive size scaling */
+    width: clamp(65px, 8vw, 120px);
+    height: clamp(30px, 6vw, 50px);
+    font-size: 1.25rem;
+
+    border-radius:  12px;
+    border: none;
+
+    color: #00E6E4;
+    background-color: #FB4F93;
+
+}
+
+.color-picker-container {
+    display: flex;
+    align-items: center;
+    width: clamp(140px, 8vw, 220px);
+    height: clamp(30px, 6vw, 50px);
+    
+    border: none;
+    border-radius: 12px;
+    background-color: #FB4F93;
+}
+input{
+    width: clamp(30px, 4vw, 60px);
+    height: clamp(30px, 4vw, 30px);
+
+}
+
+label {
+    font-size: 1.25rem;
+    padding-left: 1vw;
+}
+
 footer {
     height: 10vh;
     margin-top: 10vh;
@@ -43,4 +83,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-size: 1.25rem;
 }
