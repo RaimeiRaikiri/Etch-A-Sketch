@@ -77,9 +77,25 @@ label {
     padding-right: 1vw;
 }
 
+#buttonContainer2 {
+    width: 50vw;
+    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5vh;
+
+}
+#removeGridLines {
+    display: inline-block;
+    width: clamp(40px, 20vw, 160px);
+    height: clamp(25px, 30vh, 50px)
+}
 footer {
     height: 10vh;
-    margin-top: 10vh;
+    margin-top: 5vh;
 
     display: flex;
     align-items: center;
