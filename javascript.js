@@ -23,7 +23,7 @@ resetGridButton.addEventListener('click', function(){
     setGrid(rowLength);
 });
 
-toggleGridLineButton.addEventListener('click', () => toggleGridLines(gridLines, gridContainer));
+toggleGridLineButton.addEventListener('click', () => toggleGridLines(gridContainer));
 
 colorPicker.addEventListener('input', () => changePenColour())
 function setGrid(size)
@@ -44,7 +44,8 @@ function setGrid(size)
             const currentDiv = document.createElement('div');
             currentDiv.classList.add('colorSquare');
             currentDiv.style.cssText = `border: 1px solid #FB4F93; width: ${sizeOfSingleSquare}%; height: ${sizeOfSingleSquare}`;
-            currentDiv.addEventListener('mouseover', () => currentDiv.style.backgroundColor = penColour)
+            currentDiv.style.borderS
+            currentDiv.addEventListener('mouseover', () => currentDiv.style.backgroundColor = penColour);
             gridContainer.appendChild(currentDiv);
         }
         containerFull = true;
@@ -67,18 +68,20 @@ function changePenColour()
     penColour = `${colorPicker.value}`;
 }
 
-function toggleGridLines(gridLines, container) {
+function toggleGridLines(container) {
     let allChildren =  container.querySelectorAll('.colorSquare');
     if (gridLines)
     {
         allChildren.forEach((item)=> {
             item.style.border = 'none';
         });
+        gridLines = false;
     }
     else
     {
         allChildren.forEach((item)=> {
             item.style.border = '1px solid #FB4F93';
         });
+        gridLines = true;
     }
 }
