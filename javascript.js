@@ -23,6 +23,8 @@ resetGridButton.addEventListener('click', function(){
     setGrid(rowLength);
 });
 
+toggleGridLineButton.addEventListener('click', () => toggleGridLines(gridLines, gridContainer));
+
 colorPicker.addEventListener('input', () => changePenColour())
 function setGrid(size)
 {
