@@ -4,9 +4,12 @@ const buttonContainer = document.querySelector('#buttonContainer');
 const setGridButton = document.querySelector('#setGrid');
 const resetGridButton = document.querySelector('#resetGrid');
 const colorPicker = document.querySelector("#color-picker");
+const toggleGridLineButton = document.querySelector('#toggleGridLines');
+
 let containerFull = false;
 let rowLength = 10;
 let penColour = '#000000';
+let gridLines = true;
 
 setGridButton.addEventListener('click', function(){
     // prompting outside the function makes the function more scalable for different inputs
@@ -60,4 +63,20 @@ function resetGrid(containerFull, container){
 function changePenColour()
 {
     penColour = `${colorPicker.value}`;
+}
+
+function toggleGridLines(gridLines, container) {
+    let allChildren =  container.querySelectorAll('.colorSquare');
+    if (gridLines)
+    {
+        allChildren.forEach((item)=> {
+            item.style.border = 'none';
+        });
+    }
+    else
+    {
+        allChildren.forEach((item)=> {
+            item.style.border = '1px solid #FB4F93';
+        });
+    }
 }
