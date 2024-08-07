@@ -23,6 +23,7 @@ Hover over the tiles with the mouse and a multicoloured trail will follow along!
 - Alter grid sizes - to fit your creative style
 - Reset the grid - for a clean slate to work with
 - Change colour of trail - have a small selection of colour choices to customise your creations
+- Toggle of grid lines
 
 # To view the website
 
