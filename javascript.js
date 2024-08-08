@@ -11,6 +11,9 @@ let rowLength = 10;
 let penColour = '#000000';
 let gridLines = true;
 
+// Set grid to be active at length 10x10 immediately
+setGrid(10);
+
 setGridButton.addEventListener('click', function(){
     // prompting outside the function makes the function more scalable for different inputs
     rowLength = prompt('Enter rowLength (max 100)', 10);
