@@ -98,12 +98,15 @@ label {
         position: static;
     }
 }
-#displaySize {
-    position: absolute;
-    top: 50vh;
-    left: 0;
-    font-size: 1.25rem;
+@media screen and (min-width:481px) {
+    #displaySize {
+        position: absolute;
+        top: 50vh;
+        left: 0;
+        font-size: 1.25rem;
+    }
 }
+
 footer {
     height: 10vh;
     margin-top: 5vh;
