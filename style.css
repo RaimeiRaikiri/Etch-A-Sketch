@@ -93,6 +93,12 @@ label {
     width: clamp(40px, 20vw, 160px);
     height: clamp(25px, 30vh, 50px)
 }
+#displaySize {
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    font-size: 1.25rem;
+}
 footer {
     height: 10vh;
     margin-top: 5vh;
