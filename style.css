@@ -93,6 +93,11 @@ label {
     width: clamp(40px, 20vw, 160px);
     height: clamp(25px, 30vh, 50px)
 }
+@media screen and (max-width: 480px) {
+    #displaySize {
+        position: static;
+    }
+}
 #displaySize {
     position: absolute;
     top: 50vh;
