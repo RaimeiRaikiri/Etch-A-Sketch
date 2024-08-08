@@ -5,6 +5,7 @@ const setGridButton = document.querySelector('#setGrid');
 const resetGridButton = document.querySelector('#resetGrid');
 const colorPicker = document.querySelector("#color-picker");
 const toggleGridLineButton = document.querySelector('#toggleGridLines');
+const gridDisplaySize = document.querySelector('#displaySize');
 
 let containerFull = false;
 let rowLength = 10;
@@ -13,6 +14,8 @@ let gridLines = true;
 
 // Set grid to be active at length 10x10 immediately
 setGrid(10);
+// Set display size on page load
+gridDisplaySize.textContent = `Grid size: ${rowLength} x ${rowLength}`;
 
 setGridButton.addEventListener('click', function(){
     // prompting outside the function makes the function more scalable for different inputs
@@ -52,6 +55,8 @@ function setGrid(size)
             gridContainer.appendChild(currentDiv);
         }
         containerFull = true;
+        // Set display size text to display size on change
+        gridDisplaySize.textContent = `Grid size: ${size} x ${size}`;
     };
 }
 
